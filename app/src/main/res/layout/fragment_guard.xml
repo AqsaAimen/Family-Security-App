@@ -1,0 +1,97 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Security"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/cardview_dark_background"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:id="@+id/card1"
+        android:elevation="16sp"
+        android:layout_height="180sp"
+        android:layout_margin="16sp"
+        app:cardBackgroundColor="#EF7CA6"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintTop_toBottomOf="@id/sec">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS"
+            android:id="@+id/t1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="#FBF5F5"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:textSize="15sp"
+            android:text="In case of Emergency keep telling family members to contact me"
+            android:textColor="#F5EEEE"
+            android:layout_marginLeft="10sp"
+            />
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="220sp"
+            android:src="@drawable/sad"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/card2"
+        android:layout_height="180sp"
+        android:layout_margin="16sp"
+        android:elevation="16sp"
+        app:cardBackgroundColor="#84E0EB"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUARD"
+            android:id="@+id/t2"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="#FBF5F5"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:textSize="15sp"
+            android:text="Open when you are on a potential dangerous journey "
+            android:textColor="#F5EEEE"
+            android:layout_marginLeft="10sp"
+            />
+        <ImageView
+            android:layout_width="130sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="230sp"
+            android:src="@drawable/ok"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
